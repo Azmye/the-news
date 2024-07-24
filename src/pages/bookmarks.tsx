@@ -1,5 +1,10 @@
-import React from "react";
+import { Fragment } from "react";
+import { BookmarksArticles } from "../sections";
 
 export const Bookmarks = () => {
-  return <div>article-detail</div>;
+  return (
+    <Fragment>
+      <BookmarksArticles />
+    </Fragment>
+  );
 };

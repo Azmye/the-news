@@ -5,13 +5,15 @@ import { IArticle } from "../../types/articles";
 type Props = {
   article: IArticle;
   className?: string;
+  onClick?: () => void;
 };
 
-export const Article = ({ article, className }: Props) => {
+export const Article = ({ article, className, onClick }: Props) => {
   const cardShrink = className?.includes("col-span-2 row-span-2");
   return (
     <div
-      className={`relative rounded-md overflow-hidden shadow-xl ${className}`}
+      onClick={onClick}
+      className={`relative rounded-md overflow-hidden shadow-xl cursor-pointer ${className}`}
     >
       <img src={article.urlToImage} className="w-full object-cover" />
       <div className="flex items-end">

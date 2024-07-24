@@ -11,7 +11,7 @@ export const articleSlice = createSlice({
   initialState,
   reducers: {
     addArticle: (state, action) => {
-      state.data.push(action.payload);
+      state.data.push({ ...action.payload, id: Date.now() });
     },
     removeArticle: (state, action) => {
       state.data = state.data.filter(

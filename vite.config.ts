@@ -10,9 +10,9 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://newsapi.org/v2", // Target API server
+        target: "https://newsapi.org/v2",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""), // Rewrite path
+        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },

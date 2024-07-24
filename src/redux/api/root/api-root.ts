@@ -7,7 +7,7 @@ export const apiRoot = createApi({
     prepareHeaders: (headers) => {
       headers.set(
         "Authorization",
-        `Bearer ${import.meta.env.VITE_API_KEY || process.env.API_KEY}`
+        `Bearer ${import.meta.env.VITE_APP_API_KEY}`
       );
       return headers;
     },

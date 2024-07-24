@@ -5,10 +5,7 @@ export const apiRoot = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "https://newsapi.org/v2",
     prepareHeaders: (headers) => {
-      headers.set(
-        "Authorization",
-        `Bearer ${import.meta.env.VITE_APP_API_KEY}`
-      );
+      headers.set("X-Api-Key", `${import.meta.env.VITE_APP_API_KEY}`);
       return headers;
     },
   }),

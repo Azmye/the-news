@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { ErrorPage, Home, Root } from "../pages";
+import { Bookmarks, ErrorPage, Home, Root } from "../pages";
 
 export const router = createBrowserRouter([
   {
@@ -10,6 +10,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/bookmarks",
+        element: <Bookmarks />,
       },
     ],
   },

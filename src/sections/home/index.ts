@@ -1,2 +1,2 @@
-export * from "./articles";
-export * from "./search-bar";
+export * from "./home-articles";
+export * from "./home-search-bar";

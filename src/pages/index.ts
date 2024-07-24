@@ -1,4 +1,4 @@
 export * from "./error-page";
 export * from "./root";
 export * from "./home";
-export * from "./article-detail";
+export * from "./bookmarks";

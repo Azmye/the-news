@@ -1,11 +1,11 @@
 import { Fragment } from "react";
-import { Articles, SearchBar } from "../sections/home";
+import { HomeArticles, HomeSearchBar } from "../sections/home";
 
 export const Home = () => {
   return (
     <Fragment>
-      <SearchBar />
-      <Articles />
+      <HomeSearchBar />
+      <HomeArticles />
     </Fragment>
   );
 };
